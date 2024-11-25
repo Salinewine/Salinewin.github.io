@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Executor Listings</title>
@@ -14,50 +13,71 @@
             padding: 0;
         }
         .container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
         }
         .card {
             background-color: #222;
-            width: 300px;
             border-radius: 10px;
-            padding: 15px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            padding: 20px;
             text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
         .card h3 {
-            font-size: 20px;
-            margin-bottom: 10px;
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #ffcc00;
         }
-        .card p {
+        .card ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: left;
+            margin-bottom: 15px;
+        }
+        .card ul li {
             font-size: 14px;
-            margin-bottom: 10px;
+            line-height: 1.5;
+            margin-bottom: 5px;
         }
-        .card .pros, .card .neutral {
-            font-size: 12px;
-            margin-bottom: 10px;
+        .pros, .neutral {
+            margin-bottom: 15px;
         }
-        .card .price {
+        .pros strong, .neutral strong {
             font-size: 16px;
-            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+        .price {
+            font-size: 18px;
+            margin-bottom: 15px;
             font-weight: bold;
+            color: #00ff00;
         }
         .card a {
             text-decoration: none;
-            color: #ff5c5c;
-            margin-top: 10px;
-            display: inline-block;
-            background-color: #222;
-            padding: 10px;
-            border-radius: 5px;
-            border: 2px solid #ff5c5c;
-        }
-        .card a:hover {
             background-color: #ff5c5c;
             color: #fff;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .card a:hover {
+            background-color: #ffcc00;
+            color: #111;
+        }
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+                gap: 20px;
+                padding: 20px;
+            }
         }
     </style>
 </head>
@@ -75,7 +95,9 @@
             </div>
             <div class="neutral">
                 <strong>Neutral:</strong>
-                <p>Crashes occasionally</p>
+                <ul>
+                    <li>Crashes occasionally</li>
+                </ul>
             </div>
             <div class="price">$7.49 per week</div>
             <a href="#">Visit Website</a>
@@ -93,7 +115,9 @@
             </div>
             <div class="neutral">
                 <strong>Neutral:</strong>
-                <p>Crashes a lot</p>
+                <ul>
+                    <li>Crashes a lot</li>
+                </ul>
             </div>
             <div class="price">$6.49 per week</div>
             <a href="#">Visit Website</a>
@@ -110,7 +134,9 @@
             </div>
             <div class="neutral">
                 <strong>Neutral:</strong>
-                <p>Issues with key system</p>
+                <ul>
+                    <li>Issues with key system</li>
+                </ul>
             </div>
             <div class="price">$4.98 per month</div>
             <a href="#">Visit Website</a>
@@ -128,7 +154,9 @@
             </div>
             <div class="neutral">
                 <strong>Neutral:</strong>
-                <p>Frequent crashes</p>
+                <ul>
+                    <li>Frequent crashes</li>
+                </ul>
             </div>
             <div class="price">FREE</div>
             <a href="#">Download</a>
@@ -147,7 +175,9 @@
             </div>
             <div class="neutral">
                 <strong>Neutral:</strong>
-                <p>Level 3</p>
+                <ul>
+                    <li>Level 3</li>
+                </ul>
             </div>
             <div class="price">FREE</div>
             <a href="#">Download</a>
