@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SimplesHub</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #1a1a2e;
+      color: #f1f1f1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      background: #252a41;
+      border-radius: 15px;
+      padding: 30px;
+      width: 90%;
+      max-width: 600px;
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+      text-align: center;
+      margin-bottom: 60px; /* Leaves space for the footer */
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      color: #ff6b6b;
+    }
+
+    .version {
+      font-size: 1rem;
+      color: #a0a0a0;
+      margin-bottom: 20px;
+    }
+
+    .code-block {
+      background: #1e1e2e;
+      padding: 15px;
+      border-radius: 10px;
+      font-family: monospace;
+      color: #00d1b2;
+      margin: 15px 0;
+      overflow-x: auto;
+    }
+
+    .logo {
+      margin: 20px 0;
+      border-radius: 10px;
+      width: 120px;
+      height: auto;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .discord-link {
+      display: inline-block;
+      margin: 20px 0;
+      padding: 10px 20px;
+      background: #7289da;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .discord-link:hover {
+      background: #5a6db8;
+    }
+
+    .supported-games {
+      margin-top: 20px;
+      color: #00bfff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .supported-games:hover {
+      text-decoration: underline;
+    }
+
+    .footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background: #1a1a2e;
+      color: #a0a0a0;
+      text-align: center;
+      padding: 10px 0;
+      font-size: 0.9rem;
+    }
+
+    .footer a {
+      color: #00bfff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>SH | SimplesHub</h1>
+    <p class="version">Current Version: 1.5</p>
+    <p class="code-block">print("The Ultimate Lua Script Hub made for Roblox Executors.")</p>
+    <img src="https://i.imgur.com/sFEIzrY.png" alt="SimplesHub Logo" class="logo">
+    <p class="code-block">
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/pineappleisntapple/SimplesHubV1.5KeySystem/main/SimplesHubV1.5KeyLoader.lua"))()
+    </p>
+    <p>Claim the key in our Discord:</p>
+    <a href="#" class="discord-link">Discord Server Link</a>
+    <a href="#" class="supported-games">Supported Games</a>
+  </div>
+  <div class="footer">
+    Made with ❤️ by <a href="#">Your Name</a>. © 2024 SimplesHub. All rights reserved.
+  </div>
+</body>
+</html>
